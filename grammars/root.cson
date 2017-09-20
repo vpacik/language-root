@@ -1,0 +1,13 @@
+'scopeName': 'source.root'
+'name': 'ROOT/C++'
+'fileTypes': ['cxx', 'h', 'C']
+'patterns': [
+    {
+      'name': 'constant.numeric.root'
+      'match': '\\b(([0-9]+\\.?[0-9]*)|(\\.[0-9]+))\\b'
+    },
+    {
+      'match': '::'
+      'name': 'punctuation.separator.namespace.access.cpp'
+    }
+]
