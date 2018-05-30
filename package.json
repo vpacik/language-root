@@ -2,16 +2,8 @@
   "name": "language-root",
   "version": "0.1.0",
   "description": "CERN ROOT framework support for Atom",
-  "engines": {
-    "atom": "*"
-  },
-  "dependencies": {},
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/vpacik/language-root"
-  },
-  "bugs": {
-    "url": "https://github.com/vpacik/language-root/issues"
-  },
-  "license": "MIT"
+  "keywords": [ "language", "grammar"],
+  "repository": "https://github.com/atom/language-root",
+  "license": "MIT",
+  "engines": { "atom": ">=1.0.0 <2.0.0" }
 }
