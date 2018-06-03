@@ -1,13 +1,41 @@
-# If this is your first time writing a language grammar, check out:
-#   - https://flight-manual.atom.io/hacking-atom/sections/creating-a-grammar/
-
-'scopeName': 'source.root'
-'name': 'ROOT/C++'
-'fileTypes': ['C','cxx','cpp','h']
-'limitLineLength': false
-'patterns': [
+scopeName: 'source.cpp.root'
+name: 'ROOT/C++'
+fileTypes: [
+  'C'
+  'cxx'
+  'cpp'
+  'h'
+]
+firstLineMatch: '^\\/\\/\\ *@\\(#\\)root\\w*\\/*\\w*'
+limitLineLength: false
+patterns: [
   {
-    'match': '^\\s*@@.*$'
-    'name': 'comment'
+    include: 'source.cpp'
   }
 ]
+injections: {
+  "L:source.cpp - meta.preprocessor": {
+    patterns: [
+      {
+        # ROOT objects/instances (TObject)
+        name: 'storage.type.cpp.root'
+        match: '\\bT[A-Z]\\w+\\b'
+      }
+      {
+        # constants (kIsValid)
+        name: 'constant.language.cpp.root'
+        match: '\\bk[A-Z]\\w+\\b'
+      }
+      {
+        # typedefs & structs (Double_t)
+        name: 'storage.type.language.cpp.root'
+        match: '\\b[A-Z][a-z]+_t\\b'
+      }
+      {
+        # global/static class members (fgVariable)
+        name: 'variable.other.readwrite.member-global.cpp.root'
+        match: '\\bfg[A-Z]\\w+\\b'
+      }
+    ]
+  }
+}

@@ -3,4 +3,4 @@
 
 '.source.root':
   'editor':
-    'commentStart': '@@ '
+    'commentStart': '//'
