@@ -1,3 +1,10 @@
+[v1.0.2]
+----------------------
+- ROOT injections removed from strings.
+- Typedefs of unsigned types (UShort_t, ...) added
+
+[v1.0.2]: https://github.com/vpacik/language-root/releases/tag/v1.0.2
+
 [v1.0.1]
 ----------------------
 - ROOT injections removed from comments.
