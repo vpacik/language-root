@@ -11,4 +11,4 @@ In addition to automatic search of files with `.cxx`,`.cpp`,`.h`,`.C`  extension
 ## Contribute!
 Are you a ROOT user and you miss something in current highlighting? Or do you have an idea you would like to share with fellow ROOTers?
 
-Then report it by opening a new [issue](), attach a screenshot with a brief explanation and that's it. For highlight-related issues, it is helpfull to list active scopes of the issue. This can be done by pressing ``cmd+alt+P``.
+Then report it by opening a new [issue](https://github.com/vpacik/language-root/issues), attach a screenshot with a brief explanation and that's it. For highlight-related issues, it is helpfull to list active scopes of the issue. This can be done by pressing ``cmd+alt+P``.
