@@ -27,9 +27,9 @@ injections: {
         match: '\\bk[A-Z]\\w+\\b'
       }
       {
-        # typedefs & structs (Double_t)
+        # typedefs & structs (Double_t, UInt_t)
         name: 'storage.type.language.cpp.root'
-        match: '\\b[A-Z][a-z]+_t\\b'
+        match: '\\bU?(?!U)[A-Z][a-z]+_t\\b'
       }
       {
         # global/static class members (fgVariable)
