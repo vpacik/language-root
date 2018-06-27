@@ -14,7 +14,8 @@ patterns: [
   }
 ]
 injections: {
-  "L:source.cpp - (meta.preprocessor, comment)": {
+  # "L:source.cpp - (meta.preprocessor, comment)": {
+  "L:source.cpp - (meta.preprocessor, comment, string)": {
     patterns: [
       {
         # ROOT objects/instances (TObject)
